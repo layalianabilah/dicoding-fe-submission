@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+  z-index: 999;
+  top: 0;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: #fcce10;
+}
+
+header.navbar-container .logo img {
+  width: 120px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2 ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #022768;
+  color: white;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .content .hero-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  text-align: center;
+  background-color: #022768;
+  color: white;
+  border-radius: 30px;
+}
+
+main .content .hero-description .title {
+  font-size: 3rem;
+  margin-block: 1rem;
+}
+
+main .content .hero-description p {
+  width: 60%;
+}
+
+main .content .hero-description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #fcce10;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .content .hero-description button:hover {
+  border: 3px solid #fcce10;
+  color: #000000;
+  background-color: transparent;
+}
+
+#kelas-off {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#kelas-off .off-description {
+  flex: 1 1;
+}
+
+#kelas-off img {
+  margin: auto;
+  min-width: 250px;
+  width: 100px;
+  display: flex;
+  flex: 1;
+}
+
+#kelas-on img {
+  margin: auto;
+  min-width: 250px;
+  width: 300px;
+  display: flex;
+  flex: 1;
+}
+
+#kelas-on {
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  align-items: center;
+}
+
+#kelas-on .on-description {
+  flex: 1 1;
+  text-align: right;
+}
+
+#kelas-on h2 {
+  display: inline;
+  text-align: right;
+}
+
+#pretest {
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #022768;
+  border-radius: 30px;
+  width: 100%;
+}
+
+button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #fcce10;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+button:hover {
+  border: 3px solid #fcce10;
+  color: #000000;
+  background-color: transparent;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #022768;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #000000;
+}
+
+/* Footer */
+footer .contact-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer .contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2 ease-in-out;
+}
+
+footer .contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input,
+form textarea {
+  display: block;
+  border-radius: 13px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.445);
+  border: none;
+  resize: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color: #0f294d;
+  width: 35vw;
+  padding: 20px;
+}
+
+form button {
+  border-radius: 30px;
+  background-color: #fcce10;
+  color: #ffffff;
+  border: 0;
+  /* width: 30%; */
+}
+
+.copyright {
+  margin-top: 30px;
+  height: 50px;
+  background-color: #022768;
+  color: white;
+  text-align: center;
+}
+
+.contact-us form textarea {
+  height: 150px;
+}
+
+.copyright p {
+  /* margin: 0; */
+  align-items: center;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+
+  main .content .content-image {
+    order: -1;
+  }
+}
+
+/* Small media devices Phone 400px*/
+@media screen and (max-width: 400px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  #kelas-off img {
+    visibility: hidden;
+    position: relative;
+    display: none;
+  }
+
+  #kelas-on img {
+    visibility: hidden;
+    position: relative;
+    display: none;
+  }
+
+  div.on-description p {
+    text-align: right;
+  }
+
+  div.on-description h2 {
+    text-align: center;
+  }
+}
